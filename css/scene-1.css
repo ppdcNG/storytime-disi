@@ -1,0 +1,72 @@
+.scene-1{
+    background: url(/images/scene1/SVG\ Cafe-01.svg);
+    background-size:     cover;            
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    position: relative;
+}
+
+.svg-section{
+    position: relative;
+    width: 100%;
+}
+.speech-bubble.timi{
+    left: 80%;
+    top: 60%;
+    transform-origin: 0% 100%;  
+}
+
+.speech-bubble.odian{
+    top: 20%;
+    left: 20%;
+    transform-origin: 100% 0%;
+}
+.speech-bubble.nafisat{
+    top: 10%;
+    left: 55%;
+}
+
+.text-section{
+    width: 100%;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    color: #FBE2CB;
+}
+.question-section{
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    color: #FBE2CB;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#scene1-question{
+    font-weight: bold;
+    font-family:  var(--main-font);
+    font-size: 1.5rem;
+}
+
+.radio-container input[type=radio]{
+    display: none;
+}
+.radio-container label{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid maroon;
+    padding: 1rem 5rem;
+    margin: .5rem 0;
+    display: grid;
+    place-items: center;
+    
+}
+input.response:checked + label{
+    background: rgb(96, 222, 231);
+    color: black;
+}
